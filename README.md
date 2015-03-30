@@ -5,4 +5,4 @@ Once deployed with CoreCLR / Kestrel, this service exposes a method that adds tw
 
 Exemple of calling : http://127.0.0.1/api/Math/Ajouter?n&=2&n2=3
 
-The associated Docker image can be found on https://github.com/jp-gouigoux/mathapi
+The associated Docker image can be found on https://registry.hub.docker.com/u/jpgouigoux/mathapi/
