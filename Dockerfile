@@ -1,7 +1,6 @@
-FROM microsoft/aspnet:latest
-MAINTAINER Jean-Philippe Gouigoux "jp.gouigoux@free.fr"
-ADD src /app/
-WORKDIR /app/
-RUN kpm restore
+FROM microsoft/aspnet:1.0.0-beta4
+ADD /src /app
+WORKDIR /app
+RUN ["dnu", "restore"]
 EXPOSE 5004
-ENTRYPOINT ["k", "kestrel"]
+ENTRYPOINT sleep 10000000 | dnx . kestrel
