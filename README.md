@@ -11,5 +11,5 @@ The user can deploy by copying the src folder onto a CoreCLR install, or use the
 
 When a container is launched, the API is exposed on port 5004 internally, under /api/Math. To call the service, one needs to use a URL corresponding to this example :
 
-    curl http://127.0.0.1/api/Math/Ajouter?n&=2&n2=3
+    curl http://127.0.0.1/api/Math/Ajouter?n1=2&n2=3
 
